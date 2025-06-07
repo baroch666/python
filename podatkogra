@@ -1,0 +1,296 @@
+from random import randint, choice
+
+
+# ---------------------------------
+name = input('Podaj imie swojego podatnika : ')
+pieniądze = 1000
+szczęście = 100
+print("No siema widzę że z ciebie dobry obywatek")
+print("płacenie podatków nie jest fajne ale musisz")
+print("musisz płacić podatki chyba że chcesz aby cię złapali")
+print("ale nie ma co przepłacać")
+print("raz na jakiś czas uniknij podatku tylko nie daj się złapać skarbówce")
+print("KOCHAM FORTNITE")
+# ---------------------------------
+szczęście_obecne = 100
+szczęście_max = 100
+pieniądze_obecne = 1000
+pieniądze_max = 1000000
+
+def kasyno_monet():
+    global pieniądze_obecne
+    global pieniądze_max
+    if pieniądze_obecne < pieniądze_max:
+        pieniądze_obecne += 5000
+    if pieniądze_obecne > 1000000:
+        pieniądze_obecne = 1000000
+
+def znajdź_szczęście():
+    global szczęście_obecne
+    global szczęście_max
+    if szczęście_obecne < szczęście_max:
+        szczęście_obecne += 20
+    if szczęście_obecne > 100:
+        szczęście_obecne = 100
+# ---------------------------------
+
+
+def uniknij_podatku():
+    global szczęście
+    if szczęście < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości szczęścia skarbówka cię złapie!")
+        return 0
+    szczęście -= 10
+    return randint(401, 401)
+
+
+def zapłać_podatek_VAT():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna albo uniknij podatku!")
+        return 0
+    pieniądze -= 200
+    return randint(200, 200)
+
+
+def zapłać_podatek_PIT():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna albo uniknij podatku!")
+        return 0
+    pieniądze -= 100
+    return randint(100, 100)
+
+
+def zapłać_podatek_CIT():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna albo uniknij podatku!")
+        return 0
+    pieniądze -= 170
+    return randint(170, 170)
+
+
+def zapłać_podatek_PCC():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna!")
+        return 0
+    pieniądze -= 290
+    return randint(290, 290)
+
+
+def zapłać_podatek_zdrowotny():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna!")
+        return 0
+    pieniądze -= 300
+    return randint(300, 300)
+
+
+def zapłać_podatek_za_prąd():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna!")
+        return 0
+    pieniądze -= 350
+    return randint(350, 350)
+
+
+def zapłać_podatek_za_GAZ():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna!")
+        return 0
+    pieniądze -= 55
+    return randint(55, 55)
+
+
+def zapłać_podatek_za_wode():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy idź do kasyna!")
+        return 0
+    pieniądze -= 140
+    return randint(140, 140)
+
+
+def zapłać_alimernty_za_6_dzieci():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        print("Nie masz wystarczającej ilości pieniędzy po co ci to było!")
+        return 0
+    pieniądze -= 7600
+    return randint(7600, 7600)
+
+
+def wypad_do_kasyna():
+    global pieniądze 
+    if pieniądze < 0:
+        print("-"*40)
+        return 0 
+    pieniądze -= 700
+    return(0)
+
+
+def pożyczka_w_banku():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        return 0
+    pieniądze += 10000
+    return(0)
+
+
+def pieniądze_od_starej_baby():
+    global pieniądze
+    if pieniądze < 0:
+        print("-"*40)
+        return 0
+    pieniądze += 100
+    return(0)
+
+
+def bicie_żony():
+    global szczęście
+    if szczęście < 0:
+        print("-"*40)
+        return 0
+    szczęście += 10
+    return(0)
+
+
+def wybierz_zapłatę():
+    print('A - uniknij podatku')
+    print('B - zapłać podatek VAT!')
+    print('C - zapłać podatek PIT!')
+    print('D - zapłać podatek CIT!')
+    print('E - zapłać podatek PCC!')
+    print('F - zapłać podatek zdrowotny!')
+    print('G - podatek za prąd')
+    print('H - podatek za gaz')
+    print('I - podatek za wode')
+    print('J - zapłać alimernty za 6 dzieci')
+    print('K - wypad do kasyna')
+    print('L - pożyczka w banku')
+    print('M - pieniądze od starej baby')
+    print('N - bicie żony')
+    co = input().upper()
+    if co == 'A':
+        return uniknij_podatku()
+    elif co == 'B':
+        return zapłać_podatek_VAT()
+    elif co == 'C':
+        return zapłać_podatek_PIT()
+    elif co == 'D':
+        return zapłać_podatek_CIT()
+    elif co == 'E':
+        return zapłać_podatek_PCC()
+    elif co == 'F':
+        return zapłać_podatek_zdrowotny()
+    elif co == 'G':
+        return zapłać_podatek_za_prąd()
+    elif co == 'H':
+        return zapłać_podatek_za_GAZ()
+    elif co == 'I':
+        return zapłać_podatek_za_wode()
+    elif co == 'J':
+        return zapłać_alimernty_za_6_dzieci()
+    elif co == 'k':
+        return wypad_do_kasyna()
+    elif co == 'l':
+        return pożyczka_w_banku()
+    elif co == 'M':
+        return pieniądze_od_starej_baby()
+    elif co == 'N':
+        return bicie_żony()
+    
+        
+    else:
+        print("Nie wybrano opcji zapłaty OSZUŚCIE PODATKOWY!!!")
+        return 0
+
+
+# ---------------------------------
+from random import randint, choice
+
+def random_podatek():
+    podatek = [
+        ["podatek VAT", 200,],
+        ["podatek PIT", 100, ],
+        ["podatek CIT", 170, ],
+        ["podatek PCC", 290, ],
+        ["podatek zdrowotny", 300, ],
+        ["podatek za prąd", 350, ],
+        ["podatek za gaz", 55, ],
+        ["podatek za wode", 140, ],
+        ["alimernty za 6 dzieci",7600 ]
+    ]
+    return choice(podatek)
+def boss_skarbówka():
+    global pieniądze, szczęście
+    print("")
+    koszt_bossa = randint(100000, 100)
+    print(f"Kontrola skarbowa wymaga zapłatyt {koszt_bossa} zł")
+
+    if pieniądze >= koszt_bossa:
+        pieniądze -=koszt_bossa
+        print(f"Zapłaciłeś {koszt_bossa} ZŁ usdało ci msię uniknąćkłopotów")
+    else:
+        print("nie maszwystarczających pieniędzy! skarbówka zabiera ci wszystko")
+        pieniądze = 0
+
+
+# ---------------------------------
+liczba_zapłaconych_podatków = 0
+
+
+while pieniądze > 0:
+    podatek = random_podatek()
+    print("-"*40)
+
+
+    while podatek[1] > 0 and pieniądze > 0:
+        print(f"{name} dostał {podatek[0]}")
+        print(f"Podatek kosztuje  {podatek[1]} ZŁ")
+
+
+        if pieniądze <= 0:
+            break
+
+
+        print(f"Masz {pieniądze} ZŁ i {szczęście} szczęścia")
+        atak = wybierz_zapłatę()
+        podatek[1] = atak
+        print(f"Dałeś {atak} ZŁ")
+
+    if podatek[1] <= 0:
+        print('koniec podatku')
+        liczba_zapłaconych_podatków+=1
+
+
+def przyznaj_rangę (liczba_zapłaconych_podatków):
+    if liczba_zapłaconych_podatków < 1:
+        return ("cienias!!!")
+    if liczba_zapłaconych_podatków < 10:
+        return ("Podatkowy Amator")
+    elif liczba_zapłaconych_podatków < 20:
+        return ("Średniak Podatkowy")
+    elif liczba_zapłaconych_podatków < 30:
+        return ("Mistrz podatkowy")
+
+
+print("-"*40)
+print("KONIEC BIEDAKU PAŃSTWO CIĘ DOJECHAŁO")
+print(f"Zapłaciłeś albo i nie {liczba_zapłaconych_podatków} podatków")
