@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+      <h1>Sophie Rain HUB</h1>
+</head>
+
+</header>
+  <img src="https://i.pinimg.com/474x/47/de/94/47de943164987621f844cff4252c70f4.jpg" alt="">
+  <img src="https://www.mundodeportivo.com/us/files/content_image_mobile_filter/uploads/2024/10/01/66fba8bc82503.jpeg" alt="">
+  <img src="https://www.infobae.com/new-resizer/VymDfE_8KypC4aZcPcRIoR7GD_8=/arc-anglerfish-arc2-prod-infobae/public/2WLD35AF5NA4FJQT3ZXJEMIJ2I.JPG" alt="">
+  <img src="https://akns-images.eonline.com/eol_images/Entire_Site/20250827/90cd702a-9def-4e2c-90a9-995b83ec4f2d_1756332916.jpg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top" alt="">
+  <img src="https://images-cdn.ubuy.co.za/65a0771b2a933211ed12fb68-8x10-sophie-rain-photo-photograph.jpg" alt="">
+  <img src="https://i1.sndcdn.com/artworks-jGJhpkIx4DcnTppx-z8339g-t500x500.png" alt="">
+  <img src="https://s.yimg.com/ny/api/res/1.2/ZY4vq2I5lWMV4avRdkW7Ww--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD03NDU7Y2Y9d2VicA--/https://media.zenfs.com/en/where_is_the_buzz_814/e656b44e82aef3a27950a92bdbe30e0a" alt="">
+  <img src="https://i.ytimg.com/vi/-JKeXHitgIU/sddefault.jpg" alt="">
+  <img src="https://pbs.twimg.com/media/GZN3AOiXAAAuSN0.jpg:large" alt="">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT_wTH33bmNw0YVDBKvkMGglvvWXN0-uYlR5j8xdoNdszF_EMNX6QmZJCnCuEEK2FfNM4&usqp=CAU" alt="">
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/sPyrOBe8TMw?si=ov_wQPkijsGDshEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdFN_N8KulHudd5XxtzcMu7DSePQohDCuqyucpJDj_qV9pyPzVmioe5LpdTc85GV5WByiTBi6qAS8nFFNlG2RC7ixl6TTTxEG9chRyWg" alt="">
+  <img src="https://heute-at-prod-images.imgix.net/2024/12/05/44930fab-5bbf-48fd-89fc-71202e8c6385.jpeg?rect=0%2C0%2C1616%2C909&auto=format" alt="">
+  <img src="https://imagez.tmz.com/image/68/4by3/2024/11/29/68f5ccb4025443888aebe5f2483801db_md.jpg" alt="">
+  <img src="https://imagez.tmz.com/image/ef/4by3/2024/12/05/efd704c85d164ad99c531c06a49ea126_md.jpg" alt="">
+  <img src="https://pbs.twimg.com/media/GqH2gBkWIAEp3U6.jpg:large" alt="">
+</body>
+</html>
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*----------------------*/
+* {
+    color: orange;
+}
+header {
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
